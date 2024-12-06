@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUtensils, faIceCream, faCocktail, faLeaf, faArrowRight, faArrowLeft, faLocationPin } from '@fortawesome/free-solid-svg-icons';
+import {  faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const reviews = [
