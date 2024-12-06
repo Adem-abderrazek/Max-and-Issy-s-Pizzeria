@@ -19,7 +19,7 @@ const Hero = () => {
   }, [images.length]);
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-screen font-merienda ">
       <div
         className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
         style={{
@@ -27,7 +27,6 @@ const Hero = () => {
         }}
       ></div>
 
-      <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
       
       <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -37,10 +36,10 @@ const Hero = () => {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-5xl  text-[#fae0c1] md:text-5xl font-bold mb-4">
+        <h1 className="text-5xl  text-[#fae0c1] md:text-5xl font-merienda mb-4">
         A neighborhood place serving New York style pizza.
         </h1>
-        <p className="text-lg text-white md:text-2xl mb-8 max-w-3xl">
+        <p className="text-lg text-white md:text-2xl mb-8 max-w-3xl font-merienda">
         <span className="text-[#B73C21] font-merienda">Max</span>{" "}
       <span className="text-[#fae0c1] font-merienda italic">&</span>{" "}
       <span className="text-[#B73C21] font-merienda">Issy</span>
