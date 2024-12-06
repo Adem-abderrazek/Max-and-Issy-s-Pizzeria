@@ -48,7 +48,7 @@ const Hero = () => {
         <p className="text-lg text-white md:text-2xl mb-8 max-w-3xl">
           is Closed on Mondays.
         </p>
-       <button className="px-6 py-3 bg-[#B73C21] text-white font-semibold rounded hover:bg-[#fae0c1] transition duration-300 bounce-button hover:text-[#B73C21]">See Menu</button>
+       <a  href="#menu" className=" cursor-pointer px-6 py-3 bg-[#B73C21] text-white font-semibold rounded hover:bg-[#fae0c1] transition duration-300 bounce-button hover:text-[#B73C21]">See Menu</a>
       </div>
     </div>
   );
