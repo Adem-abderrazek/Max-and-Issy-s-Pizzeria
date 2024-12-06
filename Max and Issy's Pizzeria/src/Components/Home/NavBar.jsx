@@ -24,12 +24,12 @@ function NavBar() {
         {/* <div className="font-bold text-xl">Gusto</div> */}
         <img width={150} height={30} src="https://www.maxandissys.com/wp-content/uploads/2021/05/max-issy-logo-chicago-1.png" alt="" />
         <ul className="flex space-x-8">
-          <li><h1 href="#specials" className=" text-lg text-bloody ">Menu</h1></li>
-          <li><h1 href="#about" className=" text-lg text-bloody">Review</h1></li>
-          <li><h1 href="#menu" className=" text-lg text-bloody ">About Us </h1></li>
-          <li><h1 href="#chef" className=" text-lg text-bloody ">Chefs</h1></li>
-          <li><h1 href="#contact" className=" text-lg text-bloody ">Contact</h1></li>
-          <li><h1 href="#contact" className=" text-lg text-bloody ">Reservation</h1></li>
+          <li><a href="#menu" className=" text-lg text-bloody ">Menu</a></li>
+          <li><a href="#reviews" className=" text-lg text-bloody">Review</a></li>
+          <li><a href="#about us" className=" text-lg text-bloody ">About Us </a></li>
+          <li><a href="#chef" className=" text-lg text-bloody ">Chefs</a></li>
+          <li><a href="#contact" className=" text-lg text-bloody ">Contact</a></li>
+          <li><a href="#contact" className=" text-lg text-bloody ">Reservation</a></li>
 
         </ul>
       </div>
