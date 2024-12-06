@@ -43,7 +43,9 @@ function App() {
       </div>
       <div id="about us">
       <AboutUs/>
+      <div id="reservation">
       <Reservation/>
+      </div>
       <Reviews/>
       </div>
       <Footer/>
