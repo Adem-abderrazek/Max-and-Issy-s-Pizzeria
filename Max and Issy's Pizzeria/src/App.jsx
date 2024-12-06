@@ -8,6 +8,7 @@ import Reviews from './Components/Home/Reviews';
 import NavBar from './Components/Home/NavBar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faArrowUp , faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import Reservation from './Components/Home/Reservation';
 function App() {
 
   const [showArrow, setShowArrow] = useState(false);
@@ -42,8 +43,7 @@ function App() {
       </div>
       <div id="about us">
       <AboutUs/>
-      </div>
-      <div id="reviews" >
+      <Reservation/>
       <Reviews/>
       </div>
       <Footer/>
