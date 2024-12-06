@@ -6,11 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-        colors: {
-            peach: '#fae0c1', 
-            bloody:'#B73C21'
-        },
+
+      fontFamily: {
+        merienda: ['Merienda', 'cursive'],
+      },
+      colors: {
+        peach: '#fae0c1', 
+        bloody:'#B73C21'
     },
-},
+  },
+       
+    },
+
   plugins: [],
 };

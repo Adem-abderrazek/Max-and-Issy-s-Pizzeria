@@ -1,17 +1,20 @@
-import React from 'react';
-import NavBar from './Components/Home/NavBar';
+
+import react from 'react'
 import Hero from './Components/Home/Hero';
-import Menu from './Components/Home/Menu';
+import Menu from './Components/Home/Menu/Menu';
+import Footer from './Components/Home/Footer';
 import AboutUs from './Components/Home/AboutUs';
 import Reviews from './Components/Home/Reviews';
-const App = () => {
+import NavBar from './Components/Home/NavBar';
+function App() {
   return (
-    <div>
+    <div className=" items-center justify-center h-screen bg-gray-100">
       <NavBar/>
-      <Hero/>
+      <Hero />
+      <Menu/>
       <AboutUs/>
       <Reviews/>
-
+      <Footer/>
     </div>
   );
 };
