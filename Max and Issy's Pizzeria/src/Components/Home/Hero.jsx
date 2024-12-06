@@ -5,7 +5,7 @@ import image2 from "../../assets/image2.jpg";
 import image3 from "../../assets/image3.jpg";
 
 const Hero = () => {
-  const images = [image1, image2, image3];
+  const images = [image2,image1, image3];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visible, setVisible] = useState(false);
 

@@ -33,7 +33,7 @@ const AboutUs = () => {
        
          <FontAwesomeIcon   icon={faPhone}/>    +1 773-687-8505    
          </p>
-         <div className='grid grid-cols-1 gap-1'>
+         <div className='grid grid-cols-2 gap-1 justify-between align-center'>
         
          <h1><FontAwesomeIcon   icon={faCheck}/>  Outdoor seating</h1>
          <h1> <FontAwesomeIcon   icon={faCheck}/>Delivery </h1>
