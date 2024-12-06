@@ -126,7 +126,7 @@ const Reservation = () => {
             <div>
               <label className="block text-peach mb-2">Seating Preference</label>
               <div className="flex space-x-[40px] rounded bg-gray-700   h-[48px] w-auto">
-                <label className="flex items-center space-x-2 bg-gray-700">
+                <label className="flex items-center space-x-2 bg-gray-700 rounded ml-3">
                   <input
                     type="radio"
                     name="seating"
