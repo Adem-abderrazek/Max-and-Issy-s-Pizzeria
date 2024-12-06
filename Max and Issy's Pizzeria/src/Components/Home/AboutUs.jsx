@@ -1,5 +1,6 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone,faLocationPin , faCheck } from '@fortawesome/free-solid-svg-icons';
 
 
 const AboutUs = () => {
@@ -26,24 +27,20 @@ const AboutUs = () => {
 
         <p className="text-gray-400 text-sm md:text-base">
 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sollicitudin
-
-          hendrerit a amet viverra. Nunc pretium in amet at mattis cras. Quisque
-
-          commodo mattis ornare a nec odio. Pulvinar orci, egestas eget nulla
-
-          duis at iaculis nunc, elit. Nibh auctor purus nunc tellus pellentesque
-
-          nibh mattis. Malesuada integer consectetur.
-
-        </p>
-
-        <button className="bg-transparent border-2 border-white text-white px-6 py-2 rounded hover:bg-white hover:text-black">
-
-          Read more
-
-        </button>
+            <h1> <FontAwesomeIcon   icon={faLocationPin}/>   1028 W Diversey Pkwy, Chicago, IL 60614, United States</h1> 
+        <br/>
+        
        
+         <FontAwesomeIcon   icon={faPhone}/>    +1 773-687-8505    
+         </p>
+         <div className='grid grid-cols-1 gap-1'>
+        
+         <h1><FontAwesomeIcon   icon={faCheck}/>  Outdoor seating</h1>
+         <h1> <FontAwesomeIcon   icon={faCheck}/>Delivery </h1>
+         <h1>  <FontAwesomeIcon   icon={faCheck}/>Takeaway </h1>
+         <h1> <FontAwesomeIcon   icon={faCheck}/>Dine-in </h1>
+        
+         </div>
 
       </div>
 
