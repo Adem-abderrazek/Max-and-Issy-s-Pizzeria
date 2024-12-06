@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import image1 from "../../assets/image1.jpg";
 import image2 from "../../assets/image2.jpg";
@@ -55,3 +56,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
