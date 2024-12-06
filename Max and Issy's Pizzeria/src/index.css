@@ -50,7 +50,7 @@
 /* Additional text color change on hover */
 .card:hover h3,
 .card:hover p {
-  color: #e2bf74; /* Change text color on hover */
+  color: #ffaf01; /* Change text color on hover */
 }
 
 /* Animation for images */

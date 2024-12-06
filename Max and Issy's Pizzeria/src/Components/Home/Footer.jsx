@@ -25,10 +25,9 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+              <h3 className="text-lg text-black font-semibold mb-2">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="/" className="text-gray-400 hover:text-white">
@@ -45,25 +44,11 @@ const Footer = () => {
                     Press
                   </a>
                 </li>
-                <li>
-                  <a href="/" className="text-gray-400 hover:text-white">
-                    Partnerships
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="text-gray-400 hover:text-white">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="/" className="text-gray-400 hover:text-white">
-                    Affiliates
-                  </a>
-                </li>
+               
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Support</h3>
+              <h3 className="text-lg text-black font-semibold mb-2">Support</h3>
               <ul className="space-y-2">
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white">
@@ -75,32 +60,12 @@ const Footer = () => {
                     Contact Us
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    FAQ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Terms of Service
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Accessibility
-                  </a>
-                </li>
+               
               </ul>
             </div>
           </div>
 
-          {/* Social Media */}
-          <div className="md:col-span-1 flex items-center justify-center md:justify-end">
+            <div className="md:col-span-1 flex items-center justify-center md:justify-end">
             <ul className="flex space-x-4">
               <li>
                 <a href="#" className="text-gray-400 hover:text-white">
