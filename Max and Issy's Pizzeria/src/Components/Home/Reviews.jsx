@@ -1,7 +1,7 @@
 import {React,useState} from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUtensils, faIceCream, faCocktail, faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { faUtensils, faIceCream, faCocktail, faLeaf, faArrowRight, faArrowLeft, faLocationPin } from '@fortawesome/free-solid-svg-icons';
 
 
 const reviews = [
@@ -135,13 +135,8 @@ const Reviews = () => {
         Words From Our Food Lovers
       </h3>
       <div className="relative flex justify-center items-center w-full">
-        <button
-          onClick={handlePrev}
-          className="absolute left-0 bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:bg-gray-500"
-          disabled={currentPage === 0}
-        >
-          Previous
-        </button>
+      
+        <FontAwesomeIcon   onClick={handlePrev} icon={faArrowLeft} className="  cursor-pointer absolute left-0 bg-peach text-bloody px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:bg-gray-500 text-4xl  mb-2 bounce-icon" />
         <AnimatePresence mode="wait">
           <motion.div
             key={currentPage}
@@ -183,14 +178,11 @@ const Reviews = () => {
             ))}
           </motion.div>
         </AnimatePresence>
-        <button
-          onClick={handleNext}
-          className="absolute right-0 bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:bg-gray-500"
-          disabled={(currentPage + 1) * reviewsPerPage >= reviews.length}
-        >
-          Next
-        </button>
-        <FontAwesomeIcon className="absolute right-0 bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:bg-gray-500"  />
+       
+      
+        <FontAwesomeIcon   disabled={(currentPage + 1) * reviewsPerPage >= reviews.length}  onClick={handleNext} icon={faArrowRight} className="  cursor-pointer absolute right-0 bg-peach text-bloody px-4 py-2 rounded-lg hover:bg-yellow-600 disabled:bg-gray-500 text-4xl  mb-2 bounce-icon" />
+        
+        
       </div>
     </div>
   </div>
