@@ -8,7 +8,7 @@ import Reviews from './Components/Home/Reviews';
 import NavBar from './Components/Home/NavBar';
 function App() {
   return (
-    <div className=" items-center justify-center h-screen bg-gray-100">
+    <div className=" items-center justify-center h-screen bg-gray-100 font-merienda">
       <NavBar/>
       <Hero />
       <Menu/>
