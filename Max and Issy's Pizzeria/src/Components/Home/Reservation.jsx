@@ -23,11 +23,37 @@ const Reservation = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
-    // Add submission logic here
+    
+    try {
+      const response = await fetch("http://localhost:5000/submit-reservation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (response.ok) {
+        alert("Reservation saved successfully!");
+        setFormData({
+          name: "",
+          numberOfPersons: "",
+          seating: "indoor",
+          date: "",
+          time: "",
+          phone: "",
+          comments: "",
+        });
+      } else {
+        alert("Failed to save reservation.");
+      }
+    } catch (error) {
+      console.error("Error submitting reservation:", error);
+    }
   };
+  
 
   return (
     <div className="relative bg-black text-white flex justify-center items-center h-screen px-6 md:px-16 w-full">
@@ -40,7 +66,6 @@ const Reservation = () => {
         </h2>
 
         <div className="grid grid-cols-2 gap-4">
-          {/* Name */}
           <div className="col-span-1">
             <label className="block text-peach mb-2" htmlFor="name">
               <FontAwesomeIcon icon={faUser} className="text-xl" /> Whose Name
@@ -56,7 +81,6 @@ const Reservation = () => {
             />
           </div>
 
-          {/* Number of Persons */}
           <div className="col-span-1">
             <label className="block text-peach mb-2" htmlFor="numberOfPersons">
               <FontAwesomeIcon icon={faUser} className="text-xl" /> Number of
@@ -73,7 +97,6 @@ const Reservation = () => {
             />
           </div>
 
-          {/* Date */}
           <div className="col-span-1">
             <label className="block text-peach mb-2" htmlFor="date">
               <FontAwesomeIcon icon={faCalendar} className="text-xl" /> Date
@@ -88,7 +111,6 @@ const Reservation = () => {
             />
           </div>
 
-          {/* Time */}
           <div className="col-span-1">
             <label className="block text-peach mb-2" htmlFor="time">
               <FontAwesomeIcon icon={faClock} className="text-xl" /> Time
@@ -103,9 +125,7 @@ const Reservation = () => {
             />
           </div>
 
-          {/* Phone and Seating */}
           <div className="col-span-2 grid grid-cols-2 gap-4">
-            {/* Phone */}
             <div>
               <label className="block text-peach mb-2" htmlFor="phone">
                 <FontAwesomeIcon icon={faPhone} className="text-xl" /> Phone
@@ -122,11 +142,12 @@ const Reservation = () => {
               />
             </div>
 
-            {/* Seating Option */}
             <div>
-              <label className="block text-peach mb-2">Seating Preference</label>
+              <label className="block text-peach mb-2">
+                Seating Preference
+              </label>
               <div className="flex space-x-[40px] rounded bg-gray-700   h-[48px] w-auto">
-                <label className="flex items-center space-x-2 bg-gray-700">
+                <label className="flex items-center space-x-2 bg-gray-700 rounded ml-3">
                   <input
                     type="radio"
                     name="seating"
@@ -152,7 +173,6 @@ const Reservation = () => {
             </div>
           </div>
 
-          {/* Comments */}
           <div className="col-span-2">
             <label className="block text-peach mb-2" htmlFor="comments">
               <FontAwesomeIcon icon={faComments} className="text-xl" /> Comments
@@ -169,14 +189,15 @@ const Reservation = () => {
           </div>
         </div>
 
-        {/* Submit Button */}
-        <div className="flex justify-center"> <button
-          type="submit"
-          className="w-[26%] p-3 bg-bloody text-white font-bold rounded hover:bg-peach-dark transition  animate-bounce mr-[100px]"
-        >
-          Reserve Now
-        </button> </div>
-       
+        <div className="flex justify-center">
+          {" "}
+          <button
+            type="submit"
+            className="w-[26%] p-3 bg-bloody text-white font-bold rounded hover:bg-peach-dark transition  animate-bounce mr-[100px]"
+          >
+            Reserve Now
+          </button>{" "}
+        </div>
       </form>
     </div>
   );
