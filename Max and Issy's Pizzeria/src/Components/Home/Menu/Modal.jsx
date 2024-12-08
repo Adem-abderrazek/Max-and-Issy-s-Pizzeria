@@ -7,7 +7,7 @@ function Modal({ item, setShowModal }) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="relative bg-white p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2">
+      <div className="relative bg-[#fae0c1] p-6 rounded-lg shadow-lg w-11/12 md:w-2/3 lg:w-1/2">
         {/* Close Button */}
         <button
           onClick={() => setShowModal(false)}
