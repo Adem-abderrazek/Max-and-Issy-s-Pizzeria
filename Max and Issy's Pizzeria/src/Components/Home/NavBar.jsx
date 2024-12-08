@@ -27,8 +27,7 @@ function NavBar() {
           <li><a href="#menu" className=" text-lg text-bloody ">Menu</a></li>
           <li><a href="#reviews" className=" text-lg text-bloody">Review</a></li>
           <li><a href="#about us" className=" text-lg text-bloody ">About Us </a></li>
-          <li><a href="#chef" className=" text-lg text-bloody ">Chefs</a></li>
-          <li><a href="#contact" className=" text-lg text-bloody ">Contact</a></li>
+          <li><a href="#contactus" className=" text-lg text-bloody ">Contact</a></li>
           <li><a href="#reservation" className=" text-lg text-bloody ">Reservation</a></li>
 
         </ul>
